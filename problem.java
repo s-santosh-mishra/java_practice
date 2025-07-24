@@ -1,6 +1,10 @@
 import java.util.Scanner;
 
 public class problem {
+        /**
+         * This is the main method
+         * @param args
+         */
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
@@ -109,7 +113,14 @@ public class problem {
         // else {
         //     System.out.println("its not a leap year");
         // }
+//problem 5 even or odd using bitwise operator
 
+        // int no = input.nextInt();
+        // if(( no & 1) == 0){
+        //         System.out.println("its even");
+        // }else{
+        //         System.out.println("its odd");
+        // }
 
 
 // Problem 5 : The High-Security Door
