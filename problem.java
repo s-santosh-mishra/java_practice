@@ -134,7 +134,22 @@ public class problem {
 // isEmployee
 // hasKeycard
 // isWorkingHours
-        input.close();
+        // int i = 0;
+        // while(i<5){
+        //         System.out.print("*");
+        //         int j = 0;
+        //         while (j<i){
+        //                 System.out.print(" *");
+        //                 j+=1;
+        //         }
+        //         System.out.println();
+        //         i+=1;
+        // }
+
+
+
+
+input.close();
 
      }
  }
