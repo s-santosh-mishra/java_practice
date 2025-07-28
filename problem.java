@@ -8,119 +8,119 @@ public class problem {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-//         //Cluculte the bus fair baseg on the age and gender
+        // Cluculte the bus fair baseg on the age and gender
 
-//         // System.out.print("Hello user please enter your Name : ");
-//         // String name = input.nextLine();
+        System.out.print("Hello user please enter your Name : ");
+        String name = input.nextLine();
 
-//         // System.out.printf("Hello %s please enter your Age : ", name);
-//         // int age = input.nextInt();
-//         // input.nextLine();
+        System.out.printf("Hello %s please enter your Age : ", name);
+        int age = input.nextInt();
+        input.nextLine();
 
-//         // System.out.print("Please enter your Gender : ");
-//         // String gender = input.nextLine();
+        System.out.print("Please enter your Gender : ");
+        String gender = input.nextLine();
 
-//         // System.out.print("Final step ! Enter your Fair : ");
-//         // double fair = input.nextDouble();
+        System.out.print("Final step ! Enter your Fair : ");
+        double fair = input.nextDouble();
 
-//         // if (gender.toLowerCase().equals("female")) {
-//         //     if (age <= 10) {
-//         //         fair = fair - (fair * 0.75);
-//         //         System.out.printf("Ms. %s, Your fair would be Rs. %.2f Under Children Quota\n", name, fair);
-//         //     } else {
-//         //         fair = fair - (fair * 0.5);
-//         //         System.out.printf("Ms. %s Your fair would be Rs. %.2f Under Gender Quota\n", name, fair);
-//         //     }
-//         // } else {
-//         //     if (age >= 60) {
-//         //         fair = fair - (fair * 0.3);
-//         //         System.out.printf("Mr. %s, Your fair would be Rs. %.2f Under Senior Citizen Quota\n", name, fair);
-//         //     } else if (age <= 10) {
-//         //         fair = fair - (fair * 0.75);
-//         //         System.out.printf("Mr. %s, Your fair would be Rs. %.2f Under Children Quota\n", name, fair);
-//         //     } else {
-//         //         System.out.printf("Hello %s, Your fair would be Rs. %.2f\n", name, fair);
-//         //     }
-//         // }
+        if (gender.toLowerCase().equals("female")) {
+            if (age <= 10) {
+                fair = fair - (fair * 0.75);
+                System.out.printf("Ms. %s, Your fair would be Rs. %.2f Under Children Quota\n", name, fair);
+            } else {
+                fair = fair - (fair * 0.5);
+                System.out.printf("Ms. %s Your fair would be Rs. %.2f Under Gender Quota\n", name, fair);
+            }
+        } else {
+            if (age >= 60) {
+                fair = fair - (fair * 0.3);
+                System.out.printf("Mr. %s, Your fair would be Rs. %.2f Under Senior Citizen Quota\n", name, fair);
+            } else if (age <= 10) {
+                fair = fair - (fair * 0.75);
+                System.out.printf("Mr. %s, Your fair would be Rs. %.2f Under Children Quota\n", name, fair);
+            } else {
+                System.out.printf("Hello %s, Your fair would be Rs. %.2f\n", name, fair);
+            }
+        }
 
 
-//         //different logic
+        //different logic
 
-//         if (age<10){
-//             fair = fair - (fair * 0.75);
-//             System.out.printf("Hello, %s, Your fair would be Rs. %.2f Under Children Quota\n", name, fair);
-//         } else if(gender.toLowerCase().equals("female")){
-//             fair = fair - (fair * 0.5);
-//             System.out.printf("Ms. %s Your fair would be Rs. %.2f Under Gender Quota\n", name, fair);
-//         }
-//         else if(age>60 && !gender.toLowerCase().equals("female")){
-//             fair = fair - (fair * 0.3);
-//             System.out.printf("Mr. %s, Your fair would be Rs. %.2f Under Senior Citizen Quota\n", name, fair);
-//         }
-//         else{
-//             System.out.printf("Mr. %s, Your fair would be Rs. %.2f\n", name, fair);
-//         }
+        if (age<10){
+            fair = fair - (fair * 0.75);
+            System.out.printf("Hello, %s, Your fair would be Rs. %.2f Under Children Quota\n", name, fair);
+        } else if(gender.toLowerCase().equals("female")){
+            fair = fair - (fair * 0.5);
+            System.out.printf("Ms. %s Your fair would be Rs. %.2f Under Gender Quota\n", name, fair);
+        }
+        else if(age>60 && !gender.toLowerCase().equals("female")){
+            fair = fair - (fair * 0.3);
+            System.out.printf("Mr. %s, Your fair would be Rs. %.2f Under Senior Citizen Quota\n", name, fair);
+        }
+        else{
+            System.out.printf("Mr. %s, Your fair would be Rs. %.2f\n", name, fair);
+        }
 
-//problem 2 -> find out if a no is positive negative or zero
+// problem 2 -> find out if a no is positive negative or zero
 
-        // int a = input.nextInt();
-        // if (a==0){
-        //     System.out.println("its zero");
-        // }else if(a>0){
-        //     System.out.println("Its psoitive");
-        // }else{
-        //     System.out.println("Its negative");
-        // }
+        int a = input.nextInt();
+        if (a==0){
+            System.out.println("its zero");
+        }else if(a>0){
+            System.out.println("Its psoitive");
+        }else{
+            System.out.println("Its negative");
+        }
 
     
-//problem 3 biggest of three
-        // int a= input.nextInt();
-        // int b = input.nextInt(); 
-        // int c = input.nextInt();
-        // if(a==b && a==c){
-        //     System.out.println("All are same");
-        // }
-        // else if(a>=b && a>=c){
-        //     System.out.println(a+" is greatest ");
-        // }
-        // else if(b>=a && b>=c){
-        //     System.out.println(b+" is greatest ");
-        // }
-        // else {
-        //     System.out.println(c+" is greatest ");
-        // }
+// problem 3 biggest of three
+        int a1= input.nextInt();
+        int b1 = input.nextInt(); 
+        int c1 = input.nextInt();
+        if(a1==b1 && a1==c1){
+            System.out.println("All are same");
+        }
+        else if(a1>=b1 && a1>=c1){
+            System.out.println(a1+" is greatest ");
+        }
+        else if(b1>=a1 && b1>=c1){
+            System.out.println(b1+" is greatest ");
+        }
+        else {
+            System.out.println(c1+" is greatest ");
+        }
 
 
 // problem 4 leap year
 
-        // int year = input.nextInt();
-        // if (year % 4 == 0){
-        //     if (year % 100 != 0 || year % 400 == 0){
-        //         System.out.println("print its a leap year");
-        //     }
-        //     else{
-        //         System.out.println("print its not a leap year");
-        //     }
-        // }else{
-        //     System.out.println("print its not a leap year");
-        // }
+        int year = input.nextInt();
+        if (year % 4 == 0){
+            if (year % 100 != 0 || year % 400 == 0){
+                System.out.println("print its a leap year");
+            }
+            else{
+                System.out.println("print its not a leap year");
+            }
+        }else{
+            System.out.println("print its not a leap year");
+        }
 
-        //alternative logic
+        // alternative logic
 
-        // if(year % 400 == 0 || (year % 4 == 0 && year % 100 != 0)){
-        //     System.out.println("its a leap year");
-        // }
-        // else {
-        //     System.out.println("its not a leap year");
-        // }
-//problem 5 even or odd using bitwise operator
+        if(year % 400 == 0 || (year % 4 == 0 && year % 100 != 0)){
+            System.out.println("its a leap year");
+        }
+        else {
+            System.out.println("its not a leap year");
+        }
+// problem 5 even or odd using bitwise operator
 
-        // int no = input.nextInt();
-        // if(( no & 1) == 0){
-        //         System.out.println("its even");
-        // }else{
-        //         System.out.println("its odd");
-        // }
+        int no = input.nextInt();
+        if(( no & 1) == 0){
+                System.out.println("its even");
+        }else{
+                System.out.println("its odd");
+        }
 
 
 // Problem 5 : The High-Security Door
@@ -134,17 +134,7 @@ public class problem {
 // isEmployee
 // hasKeycard
 // isWorkingHours
-        // int i = 0;
-        // while(i<5){
-        //         System.out.print("*");
-        //         int j = 0;
-        //         while (j<i){
-        //                 System.out.print(" *");
-        //                 j+=1;
-        //         }
-        //         System.out.println();
-        //         i+=1;
-        // }
+
 
 
 

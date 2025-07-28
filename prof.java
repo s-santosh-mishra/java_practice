@@ -58,13 +58,6 @@ public class prof {
         // pb 5 -> FINDOUT LCM
         int m = input.nextInt();
         int n = input.nextInt();
-        // if (m % n == 0 || n % m == 0) {
-        // if (m >= n) {
-        // System.out.println(m + " is the LCM");
-        // } else {
-        // System.out.println(n + " is the LCM");
-        // }
-        // }
 
         int i = 2;
         int lcm = 1;
@@ -72,27 +65,36 @@ public class prof {
             System.out.println("LCM is 1");
         } else if (m == 1 || n == 1) {
             if (m > n) {
-                System.out.println("LCM is" + m);
+                System.out.println("LCM is " + m);
             } else {
-                System.out.println("LCM is" + n);
+                System.out.println("LCM is " + n);
             }
         } else {
             while (m != 1 || n != 1) {
-                if (m % i == 0 || n % i == 0) {
+                if (m % i == 0 && n % i == 0) {
+                     m = m / i;
+                     n = n / i;
+                     lcm = lcm * i;
+                }
+                else if (m % i == 0 || n % i == 0) {
+                    // i = 2;
                     if (m % i == 0) {
                         lcm = lcm * i;
                         m = m / i;
-                    } else if (n % i == 0) {
+                    }
+                    if (n % i == 0) {
                         lcm = lcm * i;
                         n = n / i;
                     }
-
+                    i++;
                 }
-                i++;
+                else{
+                    i++;
+                }
             }
         }
         lcm = lcm * m * n;
-        System.out.println("LCM is"+lcm);
+        System.out.println("LCM is "+lcm);
 
         input.close();
     }
